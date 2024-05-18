@@ -1,19 +1,19 @@
 pipeline {
     agent any 
-    stages{
-        stage{
-            steps{
-                print("Build application")
+    stages {
+        stage('Build') {
+            steps {
+                echo "Build application"
             }
         }
-        stage{
-            steps{
-                print("Excution")
+        stage('Execution') {
+            steps {
+                echo "Execution"
             }
         }
-        stage{
-            steps{
-                print("Deployment applcation")
+        stage('Deployment') {
+            steps {
+                echo "Deployment application"
             }
         }
     }
